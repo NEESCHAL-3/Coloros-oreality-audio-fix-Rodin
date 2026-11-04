@@ -1,0 +1,24 @@
+#
+# ColorOS O-Reality Audio & Spatializer Properties Snippet
+# Target File: /odm/etc/build.prop (or /vendor/build.prop)
+#
+
+# Enable OPlus Spatializer and O-Reality effect engine
+ro.audio.spatializer_enabled=true
+ro.audio.spatializer_type=oplus
+ro.oplus.audio.effect.type=audiox_merge
+ro.vendor.audio.soundfx.type=audiox
+ro.vendor.audio.soundfx.usb=true
+persist.vendor.audio.spatializer.enable=true
+
+# Disable conflicting Xiaomi/MIUI spatializer and misound
+persist.vendor.audio.misound.disable=true
+vendor.audio.useXiaomiSpatializer=false
+
+# Stereo Speaker and Headphone Spatialization
+vendor.audio.spatializer_enable_stereo=true
+vendor.audio.spatializer.music_bypass=true
+
+# Spatializer Pose Prediction & Head Tracking parameters
+audio.spatializer.pose_predictor_type=1
+audio.spatializer.prediction_duration_ms=50
