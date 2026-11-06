@@ -1,0 +1,7 @@
+# Temporary files
+*.swp
+*.bak
+*~
+.DS_Store
+*.tmp
+out/
